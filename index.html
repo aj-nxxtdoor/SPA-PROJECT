@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Lexicon – Word Dictionary</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,700;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <header>
+    <p class="logo-mark">✦ Lexicon</p>
+    <h1>The Word Explorer</h1>
+    <p>Search any word for definitions, pronunciation &amp; synonyms</p>
+  </header>
+
+  <div class="search-wrap">
+    <form id="search-form" aria-label="Word search form">
+      <input
+        id="word-input"
+        type="text"
+        placeholder="Enter a word…"
+        aria-label="Search for a word"
+        autocomplete="off"
+        spellcheck="false"
+      />
+      <button id="search-btn" type="submit" aria-label="Search">Look it up</button>
+    </form>
+  </div>
+
+  <div id="loader" role="status" aria-label="Loading…"></div>
+  <div id="error-msg" role="alert" aria-live="assertive"></div>
+  <section id="results" aria-live="polite" aria-label="Word results"></section>
+
+  <script src="script.js"></script>
+</body>
+</html>
